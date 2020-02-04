@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <clipPath id="clip-ic-comfort2-web">
+      <rect width="500" height="500"/>
+    </clipPath>
+  </defs>
+  <g id="ic-comfort2-web" clip-path="url(#clip-ic-comfort2-web)">
+    <rect width="500" height="500" fill="rgba(255,255,255,0)"/>
+    <g id="icon_web-16" data-name="icon web-16" transform="translate(-0.001 -122.334)">
+      <path id="Path_46" data-name="Path 46" d="M497.585,467.784,380.913,351.112a8.333,8.333,0,0,0-5.894-2.44H161.791l-42.243-42.243a43.646,43.646,0,0,0-5.32-55.322l-25-25a43.748,43.748,0,0,0-61.785,0l-25,25a8.334,8.334,0,0,0,0,11.783L132.215,392.674l-26.654,85.254a41.669,41.669,0,0,0,39.817,54.086H354.685a41.669,41.669,0,0,0,39.78-54.086l-18.056-57.753,84.393,84.4a8.334,8.334,0,0,0,11.783,0l25-25A8.334,8.334,0,0,0,497.585,467.784Z" transform="translate(0)" fill="#c1cce8"/>
+      <path id="Path_47" data-name="Path 47" d="M282.58,555a191.123,191.123,0,0,0-45.727,5.553l15.6,15.624L225.8,661.408a41.669,41.669,0,0,0,39.817,54.086H470.945C456.44,624.527,377.635,555,282.58,555Z" transform="translate(-120.243 -183.48)" fill="#ccd7ee"/>
+    </g>
+  </g>
+</svg>

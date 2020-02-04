@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <clipPath id="clip-ic-bintang1-web">
+      <rect width="500" height="500"/>
+    </clipPath>
+  </defs>
+  <g id="ic-bintang1-web" clip-path="url(#clip-ic-bintang1-web)">
+    <rect width="500" height="500" fill="rgba(255,255,255,0)"/>
+    <g id="Group_100" data-name="Group 100" transform="translate(-0.028 0)">
+      <rect id="Rectangle_4" data-name="Rectangle 4" width="500" height="500" rx="20" transform="translate(0.028 0)" fill="#ffd500"/>
+      <g id="Group_99" data-name="Group 99" transform="translate(119.553 121.376)">
+        <g id="Group_54" data-name="Group 54" transform="translate(0)">
+          <path id="Path_23" data-name="Path 23" d="M262.71,97.063q0-6.1-8.718-6.975L174.946,78.464,138.911,6.393C137.167,2.325,134.261,0,131.355,0s-5.812,2.325-7.556,6.393L88.345,78.464,9.3,90.089C2.906,90.67,0,92.995,0,97.063c0,2.325,1.162,4.65,4.069,7.556l57.54,55.8L47.66,239.462c0,1.744-.581,2.325-.581,2.906a9.819,9.819,0,0,0,1.744,5.812c1.162,1.744,2.906,2.325,5.231,2.325a15.153,15.153,0,0,0,6.393-1.744l70.908-37.2,70.908,37.2a13.248,13.248,0,0,0,6.393,1.744c2.325,0,3.487-.581,4.65-2.325a9.819,9.819,0,0,0,1.744-5.812v-2.906l-13.368-79.046,57.54-55.8C260.966,101.713,262.71,99.388,262.71,97.063Z" transform="translate(0 0)" fill="#fffefc"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

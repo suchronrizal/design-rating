@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Trac Rating</title>
+    <link href="./assets/css/page.min.css" rel="stylesheet" />
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <link href="./assets/css/custom.css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- http://viniciusmichelutti.github.io/jquery-stars/demo/ -->
+    <script type="text/javascript" src="./assets/js/stars/stars.min.js"></script>
+    <script src="./assets/js/jquery.matchHeight-min.js"></script>
+
+    <script src="./assets/js/axios.min.js"></script>
+    <script type="text/javascript" src="./dataText.js"></script>
+  </head>
+  <body>
+    <header class="header text-white" style="background-image: url(./assets/images/_HAN8568.jpg)">
+      <div class="overlay opacity-80" style="background-color: #213F9A"></div>
+      <div class="container">
+        <div class="row h-100 text-center">
+          <div class="col-lg-8 mx-auto align-self-center">
+            <h1 class="display-6 mt-0 mb-9">
+              <span class="font-weight-700 header-title">Beri Kami Penilaian</span>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="container">
+        <header class="section-header">
+          <div class="card shadow-2 top-min10">
+            <div class="row h-200 pb-2 pt-6">
+              <div class="col-lg-5 ml-6 mr-auto text-center text-lg-left align-self-center">
+                <h4 class="text-how">
+                  Bagaimana anda menilai pengalaman bersama kami ?
+                </h4>
+              </div>
+              <div class="col-lg-6 m-2 mb-7 align-self-end gap-x">
+                <div class="demo"></div>
+              </div>
+            </div>
+            <button class="btn-primary btn-blue bottom-rounded cz-h-button">
+              <h3 class="text-white font-weight-700 text-value">Pelayanan Cukup Cepat</h3>
+            </button>
+          </div>
+          <section class="section py-5">
+            <div class="row gap-y">
+              <div class="col-12 col-lg-6">
+                <div class="card shadow-4">
+                  <div class="card-body">
+                    <h5 class="card-title text-left">Unit</h5>
+                    <div class="row">
+                      <div class="col-4 col-lg-4">
+                        <div id="icon" class="card border-card my-2  box hover-shadow-4 bg-icon-default rounded-lg">
+                          <div data-target="clean" class="card-body pt-0 pr-4 pl-4 lead-1 text-center">
+                            <div class="text-center m-3">
+                              <img src="./assets/icon/ic-clean1-web.svg" class="avatar avatar-xs" />
+                            </div>
+                            <span class="font-size-16">Cukup Bersih</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-4 col-lg-4">
+                        <div id="icon" class="card border-card my-2  box hover-shadow-4 bg-icon-default rounded-lg">
+                          <div data-target="comfort" class="card-body pt-0 pr-4 pl-4 lead-1 text-center">
+                            <div class="text-center m-3">
+                              <img src="./assets/icon/ic-comfort1-web.svg" class="avatar avatar-xs" />
+                            </div>
+                            <span class="font-size-16">Cukup Nyaman</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-4 col-lg-4">
+                        <div id="icon" class="card border-card my-2  box hover-shadow-4 bg-icon-default rounded-lg">
+                          <div data-target="smell" class="card-body pt-0 pr-4 pl-4 lead-1 text-center">
+                            <div class="text-center m-3">
+                              <img src="./assets/icon/ic-smell1-web.svg" class="avatar avatar-xs" />
+                            </div>
+                            <span class="font-size-16">Cukup Wangi</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="card shadow-4">
+                  <div class="card-body">
+                    <h5 class="card-title text-left">Driver</h5>
+                    <div class="row">
+                      <div class="col-4 col-lg-4">
+                        <div id="icon" class="card border-card my-2 box hover-shadow-4 bg-icon-default rounded-lg">
+                          <div data-target="friendly" class="card-body pt-0 pr-4 pl-4 lead-1 text-center">
+                            <div class="text-center m-3">
+                              <img src="./assets/icon/ic-friendly1-web.svg" class="avatar avatar-xs" />
+                            </div>
+                            <span class="font-size-16">Cukup Ramah</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-4 col-lg-4">
+                        <div id="icon" class="card border-card my-2 box hover-shadow-4 bg-icon-default rounded-lg">
+                          <div data-target="navigation" class="card-body pt-0 pr-4 pl-4 lead-1 text-center">
+                            <div class="text-center m-3">
+                              <img src="./assets/icon/ic-navigation1-web.svg" class="avatar avatar-xs" />
+                            </div>
+                            <span class="font-size-16">Cukup Aman Mengemudi</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-4 col-lg-4">
+                        <div id="icon" class="card border-card my-2 box hover-shadow-4 bg-icon-default rounded-lg">
+                          <div data-target="driving" class="card-body pt-0 pr-4 pl-4 lead-1 text-center">
+                            <div class="text-center m-3">
+                              <img src="./assets/icon/ic-driving1-web.svg" class="avatar avatar-xs" />
+                            </div>
+                            <span class="font-size-16">Cukup Menguasai Navigasi</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section py-5">
+            <div class="row">
+              <div class="col-12 col-lg-12 text-center text-lg-left">
+                <h3 class="text-caption">Ceritakan pengalaman anda Bersama kami</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <textarea
+                  id="message"
+                  cols="4"
+                  rows="4"
+                  class="w-100 rounded border"
+                  placeholder="Opsional, tetapi sangat membantu untuk kami !"
+                ></textarea>
+              </div>
+            </div>
+            <div class="row py-2">
+              <div class="col-md-12">
+                <button id="submit" class="btn btn-save w-100 h-button rounded text-white lead-3">
+                  Submit
+                </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12"><div class="alert alert-danger" role="alert"></div></div>
+            </div>
+          </section>
+        </header>
+      </div>
+    </main>
+    <script>
+      let tmpIcon = [];
+      let stars = null;
+      const objSave = {};
+      $(".alert").css({ display: "none" });
+      //get stars
+      $(".demo").stars({
+        value: 3,
+        click: function(i) {
+          stars = i;
+          objSave["stars"] = stars ? stars : 0;
+          let textVal = textStars.find((val) => val.id == parseInt(i)).dataText;
+          $(".text-value").text(textVal);
+          let itemsName = itemsOptional.find((val) => val.id == parseInt(i)).arrName;
+          $("div#icon").map(function(x) {
+            $(this)
+              .attr("data-id", x)
+              .find("span")
+              .text(itemsName[x]);
+          });
+        }
+      });
+
+      //items optional
+      $("div#icon > div")
+        .mouseover(function() {
+          if (
+            $(this)
+              .parent()
+              .is(".bg-icon-click")
+          )
+            return;
+          var target = $(this).data("target");
+          $(this)
+            .find("img")
+            .attr("src", `./assets/icon/ic-${target}2-web.svg`);
+        })
+        .mouseout(function() {
+          if (
+            $(this)
+              .parent()
+              .is(".bg-icon-click")
+          )
+            return;
+          var target = $(this).data("target");
+          var src = $(this)
+            .find("img")
+            .attr("src", `./assets/icon/ic-${target}1-web.svg`);
+        })
+        .each(function(i) {
+          var isClick = false;
+          $(this).on("click", function() {
+            isClick = !isClick;
+            if (isClick) {
+              tmpIcon.push($(this).data("target"));
+              $(".bg-icon-click")
+                .not(this)
+                .trigger("mouseout");
+              $(this)
+                .parent()
+                .addClass("bg-icon-click");
+            } else {
+              tmpIcon.splice(tmpIcon.indexOf($(this).data("target")), 1);
+              $(this)
+                .parent()
+                .removeClass("bg-icon-click");
+            }
+            objSave["tmpIcon"] = tmpIcon;
+            return false;
+          });
+        });
+
+      // keep all item height
+      $(".box").matchHeight(false);
+
+      //submit
+      $("#submit").click(function(e) {
+        e.preventDefault();
+        objSave["message"] = $("textarea#message").val();
+        try {
+          $("#submit")
+            .attr("disabled", true)
+            .text("LOADING...");
+          const config = {
+            headers: {
+              "Content-Type": "application/json"
+            }
+          };
+          axios
+            .post("https://api.github.com/user", objSave, config)
+            .then(function(res) {
+              if (res.Status == 200) {
+                $("#submit")
+                  .attr("disabled", false)
+                  .text("SUBMIT");
+                $(".alert")
+                  .addClass("alert-success")
+                  .removeClass("alert-danger")
+                  .text(res.Message)
+                  .css({ display: "block" })
+                  .delay(3000)
+                  .fadeOut(2000);
+              }
+            })
+            .catch(function(error) {
+              $("#submit")
+                .attr("disabled", false)
+                .text("SUBMIT");
+
+              $(".alert")
+                .addClass("alert-danger")
+                .removeClass("alert-success")
+                .text(error)
+                .css({ display: "block" })
+                .delay(3000)
+                .fadeOut(2000);
+            });
+        } catch (error) {
+          $(".alert")
+            .addClass("alert-danger")
+            .removeClass("alert-success")
+            .text(error)
+            .css({ display: "block" })
+            .delay(3000)
+            .fadeOut(2000);
+        }
+      });
+
+      // handle keep img hover when click
+      //https://stackoverflow.com/questions/7647880/keep-image-hover-button-when-click-using-jquery
+
+      //handle accomodate uniq array push id
+      // https://stackoverflow.com/questions/50027641/pushing-and-popping-values-for-each-button-click
+    </script>
+    <script src="./assets/js/page.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
